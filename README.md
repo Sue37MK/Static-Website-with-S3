@@ -26,7 +26,7 @@ This project demonstrates how to deploy a static HTML website using Amazon S3. T
 ### 2. Enable Static Website Hosting
 - Select the created S3 bucket.
 - Navigate to the **Properties** tab.
-- 
+  
 ![Alt text](properties.png)
   
 - Scroll down to **Static website hosting**.
@@ -35,13 +35,21 @@ This project demonstrates how to deploy a static HTML website using Amazon S3. T
 ![Alt text](enble-staticwebsite.png)
   
 - Set the **index document** to `index.html`.
+  
+![Alt text](index-html.png)
+  
 - Click **Save changes**.
 
 ### 3. Modify Public Access Settings
 - Navigate to the **Permissions** tab.
 - Click **Edit** under "Block public access".
+
+![Alt text](public-access.png)
+  
 - Uncheck **Block all public access**.
 - Confirm the changes and click **Save**.
+
+![Alt text](confrim-publicaccess.png)
 
 ### 4. Apply a Bucket Policy
 - In the **Permissions** tab, scroll down to **Bucket policy**.
@@ -63,6 +71,9 @@ This project demonstrates how to deploy a static HTML website using Amazon S3. T
 ```
 
 - Replace `YOUR_BUCKET_NAME` with the actual name of your S3 bucket.
+
+![Alt text](bucket-policy.png)
+  
 - Click **Save**.
 
 ### 5. Upload Website Files
@@ -82,12 +93,23 @@ This project demonstrates how to deploy a static HTML website using Amazon S3. T
 </html>
 ```
 
-- Create an `error.html` file with relevant error information.
-- Upload both `index.html` and `error.html` to the root of your S3 bucket.
+- Upload both `index.html` and `puzzle_cat.jpg` to the root of your S3 bucket.
+  
+![Alt text](uploadfile.png)
+
+![Alt text](uploaded.png)
 
 ### 6. Test the Website
 - Navigate to the **Properties** tab in your bucket.
 - Click on the **Bucket website endpoint**.
+
+![Alt text](websiteendpoing.png)
+  
 - If everything is configured correctly, your website should be accessible.
+- 
+![Alt text](static-website.png)
+  
 - If you see a `403 Forbidden` error, double-check your bucket policy and public access settings.
+
+![Alt text](error.png)
 
