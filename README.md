@@ -100,6 +100,8 @@ This project demonstrates how to deploy a static HTML website using Amazon S3. T
   
 ![Alt text](uploadfile.png)
 
+![Alt text](addfile.png)
+
 ![Alt text](uploaded.png)
 
 ### 6. Test the Website
