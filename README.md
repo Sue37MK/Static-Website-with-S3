@@ -52,7 +52,7 @@ This project demonstrates how to deploy a static HTML website using Amazon S3. T
 - Uncheck **Block all public access**.
 - Confirm the changes and click **Save**.
 
-![Alt text](confrim-publicaccess.png)
+![Alt text](confirm-publicaccess.png)
 
 ### 4. Apply a Bucket Policy
 - In the **Permissions** tab, scroll down to **Bucket policy**.
