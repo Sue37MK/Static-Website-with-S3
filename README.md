@@ -13,17 +13,28 @@ This project demonstrates how to deploy a static HTML website using Amazon S3. T
 - Navigate to the **S3 service** in the AWS console.
 - Click **Create bucket**.
 - Provide a unique name for your bucket.
+
+ ![Alt text](createbucket.png)
+ 
 - Choose the region where the bucket should be created.
 - Disable **Block all public access** (This will be addressed in later steps).
 - Click **Create bucket**.
 
+ ![Alt text](bucket-created.png)
+  
+
 ### 2. Enable Static Website Hosting
 - Select the created S3 bucket.
 - Navigate to the **Properties** tab.
+- 
+![Alt text](properties.png)
+  
 - Scroll down to **Static website hosting**.
 - Enable **Use this bucket to host a website**.
+
+![Alt text](enble-staticwebsite.png)
+  
 - Set the **index document** to `index.html`.
-- Set the **error document** to `error.html`.
 - Click **Save changes**.
 
 ### 3. Modify Public Access Settings
