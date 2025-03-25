@@ -30,6 +30,9 @@ This project demonstrates how to deploy a static HTML website using Amazon S3. T
 ![Alt text](properties.png)
   
 - Scroll down to **Static website hosting**.
+
+  ![Alt text](endpoint.png)
+  
 - Enable **Use this bucket to host a website**.
 
 ![Alt text](enble-staticwebsite.png)
@@ -103,7 +106,7 @@ This project demonstrates how to deploy a static HTML website using Amazon S3. T
 - Navigate to the **Properties** tab in your bucket.
 - Click on the **Bucket website endpoint**.
 
-![Alt text](websiteendpoing.png)
+![Alt text](endpoint.png)
   
 - If everything is configured correctly, your website should be accessible.
 - 
