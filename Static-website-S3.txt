@@ -1,0 +1,30 @@
+Deploying a Static Website with S3
+
+I recently finished project where I hosted a static html website on S3 bucket. I have uploaded the reference diagram and scripts I used to deploy the web app on S3 for the project. Please use this information to create a readme file for the project.
+
+1. Create S3 bucket that will host the files for the static website.
+2. Create an S3 static website configuration, and link it to the existing bucket.
+3. Disable public access block so that others can access the bucket via the internet.
+4. Click to bucket website endpoint to check static website hosting is ok.
+5. 403 Error as access denied.
+6. Create a policy that allows the `s3:GetObject` action for anyone and for all objects within the created bucket.
+7. Create an `index.html` file and an `error.html` file containing some dummy text.
+8. In a first moment, upload these files manually to the bucket via the AWS console. They should be placed in the root directory of the bucket. 
+9. Testing that you can access the website via the internet after click with the S3 Static Website endpoint.
+
+
+This is the script I used to deploy website on S3.
+
+<html xmlns = "http://www.w3.org/1999/xhtml">
+<head>
+    <title>My First Website</title>
+</head>
+<body>
+    <h1>Hello world!</h1>
+    <p>I'm hosted on Amazon S3!</p>
+    <img src="puzzle_cat.jpg">
+</body>    
+</html>
+
+
+![Alt text](url.png)
